@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+.wholeApp {
+    width: 100vw;
+    height: 100vh;
+    max-width: 360px;
+    max-height: 720px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,57 @@
+p {
+    font-family: "tahoma";
+    font-size: 3rem;
+}
+
+.buttonsCont {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+button {
+    flex-grow: 0;
+    border: 1px solid rgba(204, 199, 199, 0.815);
+    letter-spacing: 2px;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    margin: 0.5rem;
+    color: white;
+    background-color: transparent;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+button:focus {
+    outline: none;
+
+}
+
+.startButton.on {
+    border: 2px solid rgb(165, 6, 6);
+}
+
+
+.buttonBorder {
+    border: 2px solid rgb(2, 53, 2);
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonBorder.on {
+    border: black;
+}

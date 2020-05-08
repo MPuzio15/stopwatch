@@ -1,0 +1,12 @@
+.timer {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.timer p {
+    flex-basis: 20%;
+    font-size: 4rem;
+    color: rgba(204, 199, 199, 0.815);
+}
