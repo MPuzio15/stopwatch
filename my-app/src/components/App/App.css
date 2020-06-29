@@ -3,6 +3,7 @@ body {
     flex-direction: row;
     justify-content: center;
     box-sizing: border-box;
+    background-color: #A5A1A1;
 }
 
 p {

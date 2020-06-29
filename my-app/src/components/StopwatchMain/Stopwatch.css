@@ -1,0 +1,22 @@
+.mainSection, .timer_wrapper{
+    width: 100%;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.timer p {
+    flex-basis: 20%;
+    font-size: 3rem;
+    color: rgba(204, 199, 199, 0.815);
+}
+
+
+
+.buttonsCont{
+    width: 100%;
+}
