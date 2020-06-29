@@ -34,11 +34,6 @@ class Timer extends Component {
     }
 
     countDown = () => {
-        // let time = this.state.userSeconds + (this.state.userMinutes * 60) + (this.state.userHours * 3600);
-        // time--;
-        // let secunds = time % 60;
-        // let minutes = Math.floor(time / 60)
-        // let hours = Math.floor(time / 3600);
         let secunds = this.state.userSeconds;
         let minutes = this.state.userMinutes;
         let hours = this.state.userHours;
@@ -80,7 +75,6 @@ class Timer extends Component {
 
     }
     handleClear = () => {
-        debugger;
         this.removeInterval();
         this.setState({
             active: !this.state.active,
