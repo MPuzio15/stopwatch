@@ -6,7 +6,7 @@ import {
   faClock,
   faHourglassHalf,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => (
@@ -14,22 +14,22 @@ const Header = () => (
     <nav>
       <ul className="header">
         <li className="liWrapper">
-          <Link className="iconWrapper" to="/time">
+          <NavLink className="iconWrapper" to="/time">
             <FontAwesomeIcon className="icon" icon={faClock} />
             <p>time</p>
-          </Link>
+          </NavLink>
         </li>
         <li className="liWrapper">
-          <Link className="iconWrapper" to="/">
+          <NavLink className="iconWrapper" exact to="/">
             <FontAwesomeIcon className="icon" icon={faStopwatch} />
             <p>stopwatch</p>
-          </Link>
+          </NavLink>
         </li>
         <li className="liWrapper">
-          <Link className="iconWrapper" to="/timer">
+          <NavLink className="iconWrapper" to="/timer">
             <FontAwesomeIcon className="icon" icon={faHourglassHalf} />
             <p>timer</p>
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

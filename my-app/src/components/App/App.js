@@ -4,23 +4,25 @@ import Stopwatch from "../StopwatchMain/Stopwatch";
 import Timer from '../Timer/Timer';
 import ActualTime from '../ActualTime/ActualTime'
 import Header from "../Header/Header";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
 const App = () => {
-    return (
-      <Router>
-        <div className="wholeApp">
-          <Header />
+  return (
+    <Router basename={process.env.PUBLIC_URL}>
+      <div className="wholeApp">
+        <Header />
         <section className="mainSection">
-          <Route exact path="/" component={Stopwatch} />
-          <Route path='/time' component={ActualTime} />
-          <Route path='/timer' component={Timer} />
+          <Switch>
+            <Route exact path="/" component={Stopwatch} />
+            <Route path='/time' component={ActualTime} />
+            <Route path='/timer' component={Timer} />
+          </Switch>
         </section>
         <Footer />
-        </div>
-      </Router>
-    );
-  }
+      </div>
+    </Router>
+  );
+}
 
 export default App;
