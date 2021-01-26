@@ -11,7 +11,7 @@ It is a stopwatch, timer and clock, all into one. Tab above enables you to switc
  
  # Installation
 ```
-Copy the clone command: git clone https://github.com/MPuzio15/django_tutorial.git
+Copy the clone command: git clone https://github.com/MPuzio15/stopwatch.git
 ```
 ```
 From a terminal window, go to the local directory where you want to clone your repository.
